@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after { // bude treba .row::after
+    content: ""; // prazndy pseudoelem, nechceme videt
+    display: table;
+    clear: both;
+  }
+}

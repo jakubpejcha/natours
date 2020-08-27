@@ -1,0 +1,20 @@
+/*
+  basic resetting for browser, should no longer be neccessary
+  also have no default margin on <h..> or <p> elements
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /*Do not include border or padding into element dimensions*/
+}
+
+html {
+  /* font-size: 10px; // ted 1rem=10px*/ /*bad practise*/
+  font-size: 62.5%; /*best practise*/
+}
+
+body {
+  box-sizing: border-box;
+}
