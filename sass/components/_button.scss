@@ -35,6 +35,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   /* put the same button after to create the fly to infinity effect */
   &::after {
     content: "";
