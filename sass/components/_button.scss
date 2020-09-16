@@ -1,4 +1,5 @@
 .btn {
+  &,// tohle je pro prpad, ze je jen <button>, nema link ani visited
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -9,6 +10,11 @@
     transition: all .2s;
     position: relative;
     font-size: $default-font-size;
+
+    // zmeny pro <button> misto <a>
+    border: none;
+    cursor: pointer;
+
   }
 
   &:hover {
@@ -21,7 +27,8 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
     transform: translateY(-0.1rem); /*all relative to initial :link state*/
     box-shadow: 0 .5rem 1rem rgba($color-black, .2);
   }
