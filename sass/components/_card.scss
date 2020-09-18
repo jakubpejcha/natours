@@ -131,10 +131,7 @@
 
   // zadni strana
   &__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include center;
     width: 90%; // zabrani automatickemu nastaveni sirky dle containeru
     text-align: center;
   }
